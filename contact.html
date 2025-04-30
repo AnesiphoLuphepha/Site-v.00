@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Isolathe Media Group</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/lucide-icons/dist/umd/lucide-icons.js" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="min-h-screen flex flex-col bg-white">
+        <!-- Header (same as index.html) -->
+        <header class="bg-white shadow-sm sticky top-0 z-50">
+            <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+        <a href="index.html" class="flex items-center space-x-3">
+		  <img src="images/logo.png" alt="Isolathe Media Group Logo" class="h-10 w-auto" />
+		  <div>
+			<span class="text-xl font-bold tracking-wider text-[#091217]">ISOLATHE MEDIA GROUP</span>
+			<span class="block text-xs tracking-wider text-gray-500">ART MEETS ADHESIVE</span>
+		  </div>
+		</a>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-600 hover:text-[#091217] transition-colors">Home</a>
+                    <a href="about.html" class="text-gray-600 hover:text-[#091217] transition-colors">About Us</a>
+                    <a href="services.html" class="text-gray-600 hover:text-[#091217] transition-colors">Services</a>
+                    <a href="contact.html" class="text-[#9ca1a4]">Contact</a>
+                </div>
+                <a href="contact.html" class="hidden md:block bg-[#9ca1a4] text-white px-4 py-2 rounded-md hover:bg-[#828688] transition">
+                    Get Quote
+                </a>
+
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden" id="menuButton">
+                    <i data-lucide="menu"></i>
+                </button>
+            </nav>
+
+            <!-- Mobile Navigation Menu -->
+            <div class="md:hidden hidden" id="mobileMenu">
+                <div class="px-4 py-2 space-y-2 bg-white border-t border-gray-100">
+                    <a href="index.html" class="block py-2">Home</a>
+                    <a href="about.html" class="block py-2">About Us</a>
+                    <a href="services.html" class="block py-2">Services</a>
+                    <a href="contact.html" class="block py-2">Contact</a>
+                    <a href="contact.html" class="block bg-[#9ca1a4] text-white px-4 py-2 rounded-md hover:bg-[#828688] transition text-center mt-4">
+                        Get Quote
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main>
+            <!-- Hero Section -->
+            <section class="relative h-[500px]">
+                <div class="absolute inset-0">
+                    <img src="images/img5.png" alt="Large format printing" class="w-full h-full object-cover" />
+                    <div class="absolute inset-0 bg-[#091217]/70"></div>
+                </div>
+                <div class="relative max-w-7xl mx-auto px-4 h-full flex items-center">
+                    <div class="max-w-3xl">
+                        <h1 class="text-5xl md:text-6xl font-bold text-white mb-6">Contact Us</h1>
+                        <p class="text-xl text-gray-200">
+                            Ready to transform your brand with high-quality printing solutions? Our team is here to help bring your vision to life.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Form Section -->
+            <section id="contact-form" class="py-20 bg-gray-50">
+                <div class="max-w-7xl mx-auto px-4">
+                    <div class="grid lg:grid-cols-3 gap-12">
+                        <!-- Contact Info -->
+                        <div class="lg:col-span-1">
+                            <div class="bg-white p-8 rounded-lg shadow-sm h-full">
+                                <h2 class="text-2xl font-bold mb-8 text-[#091217] border-b border-gray-200 pb-4">Contact Information</h2>
+                                <div class="space-y-6 text-[#091217]">
+                                    <div class="flex items-start space-x-4">
+                                        <div class="mt-1 text-[#9ca1a4]">
+                                            <i data-lucide="phone"></i>
+                                        </div>
+                                        <div>
+                                            <h3 class="font-semibold text-[#091217]">Phone</h3>
+                                            <p class="text-[#9ca1a4]">087 265 0111</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start space-x-4">
+                                        <div class="mt-1 text-[#9ca1a4]">
+                                            <i data-lucide="mail"></i>
+                                        </div>
+                                        <div>
+                                            <h3 class="font-semibold text-[#091217]">Email</h3>
+                                            <p class="text-[#9ca1a4]">
+                                                <a href="mailto:busi@isolathemediagroup.co.za" class="text-[#9ca1a4] hover:text-[#091217] transition-colors">
+                                                    busi@isolathemediagroup.co.za
+                                                </a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start space-x-4">
+                                        <div class="mt-1 text-[#9ca1a4]">
+                                            <i data-lucide="globe"></i>
+                                        </div>
+                                        <div>
+                                            <h3 class="font-semibold text-[#091217]">Website</h3>
+                                            <p class="text-[#9ca1a4]">www.isolathemediagroup.co.za</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start space-x-4">
+                                        <div class="mt-1 text-[#9ca1a4]">
+                                            <i data-lucide="map-pin"></i>
+                                        </div>
+                                        <div>
+                                            <h3 class="font-semibold text-[#091217]">Address</h3>
+                                            <p class="text-[#9ca1a4]">45 Homestead Rd, Rivonia, Sandton, 2196</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start space-x-4">
+                                        <div class="mt-1 text-[#9ca1a4]">
+                                            <i data-lucide="clock"></i>
+                                        </div>
+                                        <div>
+                                            <h3 class="font-semibold text-[#091217]">Business Hours</h3>
+                                            <p class="text-[#9ca1a4]">Mon–Fri: 8:30AM–5PM</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Contact Form -->
+                        <div class="lg:col-span-2">
+                            <div class="bg-white p-8 rounded-lg shadow-sm">
+                                <h2 class="text-2xl font-bold mb-8 text-[#091217] border-b border-gray-200 pb-4">Send Us a Message</h2>
+                                <form action="https://formspree.io/f/mvgkjpez" method="POST" class="space-y-6">
+                                    <div class="grid md:grid-cols-2 gap-6">
+                                        <div>
+                                            <label for="name" class="block text-sm font-medium text-[#091217] mb-1">
+                                                Full Name *
+                                            </label>
+                                            <input
+                                                type="text"
+                                                id="name"
+                                                name="name"
+                                                required
+                                                class="w-full px-4 py-2 border border-gray-200 rounded-md focus:ring-[#9ca1a4] focus:border-[#9ca1a4] text-[#091217]"
+                                            >
+                                        </div>
+                                        <div>
+                                            <label for="email" class="block text-sm font-medium text-[#091217] mb-1">
+                                                Email Address *
+                                            </label>
+                                            <input
+                                                type="email"
+                                                id="email"
+                                                name="email"
+                                                required
+                                                class="w-full px-4 py-2 border border-gray-200 rounded-md focus:ring-[#9ca1a4] focus:border-[#9ca1a4] text-[#091217]"
+                                            >
+                                        </div>
+                                    </div>
+                                    <div class="grid md:grid-cols-2 gap-6">
+                                        <div>
+                                            <label for="phone" class="block text-sm font-medium text-[#091217] mb-1">
+                                                Phone Number
+                                            </label>
+                                            <input
+                                                type="tel"
+                                                id="phone"
+                                                name="phone"
+                                                class="w-full px-4 py-2 border border-gray-200 rounded-md focus:ring-[#9ca1a4] focus:border-[#9ca1a4] text-[#091217]"
+                                            >
+                                        </div>
+                                        <div>
+                                            <label for="projectType" class="block text-sm font-medium text-[#091217] mb-1">
+                                                Project Type *
+                                            </label>
+                                            <select
+                                                id="projectType"
+                                                name="projectType"
+                                                required
+                                                class="w-full px-4 py-2 border border-gray-200 rounded-md focus:ring-[#9ca1a4] focus:border-[#9ca1a4] text-[#091217]"
+                                            >
+                                                <option value="">Select a project type</option>
+                                                <option value="Billboard Printing">Billboard Printing</option>
+                                                <option value="Retail Branding">Retail Branding</option>
+                                                <option value="Event Branding">Event Branding</option>
+                                                <option value="Billboard Flighting">Billboard Flighting</option>
+                                                <option value="Other">Other</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <label for="message" class="block text-sm font-medium text-[#091217] mb-1">
+                                            Your Message *
+                                        </label>
+                                        <textarea
+                                            id="message"
+                                            name="message"
+                                            rows="6"
+                                            required
+                                            class="w-full px-4 py-2 border border-gray-200 rounded-md focus:ring-[#9ca1a4] focus:border-[#9ca1a4] text-[#091217]"
+                                        ></textarea>
+                                    </div>
+                                    <button
+                                        type="submit"
+                                        class="w-full bg-[#091217] text-white px-6 py-3 rounded-md hover:bg-[#1c252c] transition font-semibold text-lg"
+                                    >
+                                        Send Message
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer (same as index.html) -->
+        <footer class="bg-[#091217] text-white py-12">
+            <div class="max-w-7xl mx-auto px-4">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <div class="flex items-center mb-6 md:mb-0">
+                        
+                        <div class="ml-3 flex items-center space-x-2">
+							<img src="images/logo2.png" alt="Isolathe Logo" class="w-10 h-10 object-contain" />
+							<div>
+								<span class="text-xl font-bold tracking-wider">ISOLATHE MEDIA GROUP</span>
+								<span class="block text-xs tracking-wider text-gray-400">ART MEETS ADHESIVE</span>
+							</div>
+						</div>
+
+                    </div>
+                    <div class="flex flex-col md:flex-row items-center space-y-4 md:space-y-0">
+                        <div class="flex space-x-6 md:mr-8">
+                            <a href="index.html" class="hover:text-[#9ca1a4] transition">Home</a>
+                            <a href="about.html" class="hover:text-[#9ca1a4] transition">About</a>
+                            <a href="services.html" class="hover:text-[#9ca1a4] transition">Services</a>
+                            <a href="contact.html" class="hover:text-[#9ca1a4] transition">Contact</a>
+                        </div>
+                        <div class="flex space-x-4">
+                            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="hover:text-[#9ca1a4] transition">
+                                <i data-lucide="facebook"></i>
+                            </a>
+                            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="hover:text-[#9ca1a4] transition">
+                                <i data-lucide="instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-8 pt-8 border-t border-gray-800 text-center text-gray-400 text-sm">
+                    <p>&copy; 2025 Isolathe Media Group. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // Mobile menu toggle
+        const menuButton = document.getElementById('menuButton');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        menuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Form submission handling
+        document.querySelector('form').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            try {
+                const response = await fetch('https://formspree.io/f/mvgkjpez', {
+                    method: 'POST',
+                    headers: {
+                        'Accept': 'application/json',
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(Object.fromEntries(new FormData(e.target)))
+                });
+
+                if (response.ok) {
+                    window.location.href = '/thank-you.html';
+                } else {
+                    alert('Something went wrong. Please try again.');
+                }
+            } catch (err) {
+                console.error(err);
+                alert('Failed to send message.');
+            }
+        });
+    </script>
+</body>
+</html>

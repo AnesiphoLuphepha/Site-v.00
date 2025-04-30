@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Isolathe Media Group</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/lucide-icons/dist/umd/lucide-icons.js" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="min-h-screen flex flex-col bg-[#091217] text-[#9ca1a4]">
+        <!-- Header (same as index.html) -->
+        <header class="bg-white shadow-sm sticky top-0 z-50">
+            <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+                       <a href="index.html" class="flex items-center space-x-3">
+		  <img src="images/logo.png" alt="Isolathe Media Group Logo" class="h-10 w-auto" />
+		  <div>
+			<span class="text-xl font-bold tracking-wider text-[#091217]">ISOLATHE MEDIA GROUP</span>
+			<span class="block text-xs tracking-wider text-gray-500">ART MEETS ADHESIVE</span>
+		  </div>
+		</a>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-600 hover:text-[#091217] transition-colors">Home</a>
+                    <a href="about.html" class="text-[#9ca1a4]">About Us</a>
+                    <a href="services.html" class="text-gray-600 hover:text-[#091217] transition-colors">Services</a>
+                    <a href="contact.html" class="text-gray-600 hover:text-[#091217] transition-colors">Contact</a>
+                </div>
+                <a href="contact.html" class="hidden md:block bg-[#9ca1a4] text-white px-4 py-2 rounded-md hover:bg-[#828688] transition">
+                    Get Quote
+                </a>
+
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden" id="menuButton">
+                    <i data-lucide="menu"></i>
+                </button>
+            </nav>
+
+            <!-- Mobile Navigation Menu -->
+            <div class="md:hidden hidden" id="mobileMenu">
+                <div class="px-4 py-2 space-y-2 bg-white border-t border-gray-100">
+                    <a href="index.html" class="block py-2">Home</a>
+                    <a href="about.html" class="block py-2">About Us</a>
+                    <a href="services.html" class="block py-2">Services</a>
+                    <a href="contact.html" class="block py-2">Contact</a>
+                    <a href="contact.html" class="block bg-[#9ca1a4] text-white px-4 py-2 rounded-md hover:bg-[#828688] transition text-center mt-4">
+                        Get Quote
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main>
+            <!-- Hero Section -->
+            <section class="relative h-[400px]">
+                <div class="absolute inset-0">
+                   <img src="images/img3.png" alt="Large format printing" class="w-full h-full object-cover" />
+                    <div class="absolute inset-0 bg-[#091217] bg-opacity-80"></div>
+                </div>
+                <div class="relative max-w-7xl mx-auto px-4 h-full flex items-center">
+                    <div class="max-w-3xl">
+                        <h1 class="text-4xl md:text-5xl font-bold text-white mb-6">Our Story</h1>
+                        <p class="text-xl text-[#9ca1a4]">
+                            A passionate, quality-driven startup dedicated to bold, high-impact print solutions.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Who We Are Section -->
+            <section class="py-20 bg-[#0e1620]">
+                <div class="max-w-7xl mx-auto px-4">
+                    <div class="grid md:grid-cols-2 gap-12">
+                        <div>
+                            <h2 class="text-3xl font-bold mb-6 text-white">Who We Are</h2>
+                            <p class="mb-6">
+                                We are a passionate, quality-driven startup dedicated to bold, high-impact print solutions for businesses, events, and retail environments. Our commitment to excellence and attention to detail sets us apart in the industry.
+                            </p>
+                            <p class="mb-6">
+                                With state-of-the-art Mimaki printers and industry-grade materials, we deliver exceptional quality for both indoor and outdoor applications. Our team of experts ensures every project meets the highest standards of durability and visual impact.
+                            </p>
+                            <a href="contact.html" class="inline-flex items-center text-[#9ca1a4] hover:text-white transition-colors">
+                                Get in touch <i data-lucide="chevron-right" class="ml-2 h-5 w-5"></i>
+                            </a>
+                        </div>
+                        <div>
+                            <img src="images/img1.png" alt="Large format printing" class="w-full h-full object-cover" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Mission Section -->
+            <section class="py-20 bg-[#091217]">
+                <div class="max-w-7xl mx-auto px-4">
+                    <h2 class="text-3xl font-bold text-center mb-12 text-white">Our Mission</h2>
+                    <div class="max-w-3xl mx-auto text-center">
+                        <p class="text-xl mb-8">
+                            To empower brands through eye-catching large-format print that turns heads, builds presence, and drives engagement.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- What Sets Us Apart -->
+            <section class="py-20 bg-[#0e1620]">
+                <div class="max-w-7xl mx-auto px-4">
+                    <h2 class="text-3xl font-bold text-center mb-12 text-white">What Sets Us Apart</h2>
+                    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                        <div class="bg-[#101a25] p-6 rounded-lg shadow-sm">
+                            <h3 class="text-xl font-semibold mb-3 text-white">Lightning Fast Service</h3>
+                            <p>Quick delivery without compromising on quality.</p>
+                        </div>
+                        <div class="bg-[#101a25] p-6 rounded-lg shadow-sm">
+                            <h3 class="text-xl font-semibold mb-3 text-white">Premium Materials</h3>
+                            <p>Industry-grade materials for indoor and outdoor durability.</p>
+                        </div>
+                        <div class="bg-[#101a25] p-6 rounded-lg shadow-sm">
+                            <h3 class="text-xl font-semibold mb-3 text-white">Precision Output</h3>
+                            <p>Cutting-edge Mimaki printers for exceptional quality.</p>
+                        </div>
+                        <div class="bg-[#101a25] p-6 rounded-lg shadow-sm">
+                            <h3 class="text-xl font-semibold mb-3 text-white">Personal Service</h3>
+                            <p>Dedicated support throughout your project.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer (same as index.html) -->
+        <footer class="bg-[#091217] text-white py-12">
+            <div class="max-w-7xl mx-auto px-4">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <div class="flex items-center mb-6 md:mb-0">
+                        <div class="ml-3 flex items-center space-x-2">
+							<img src="images/logo2.png" alt="Isolathe Logo" class="w-10 h-10 object-contain" />
+							<div>
+								<span class="text-xl font-bold tracking-wider">ISOLATHE MEDIA GROUP</span>
+								<span class="block text-xs tracking-wider text-gray-400">ART MEETS ADHESIVE</span>
+							</div>
+						</div>
+                    </div>
+                    <div class="flex flex-col md:flex-row items-center space-y-4 md:space-y-0">
+                        <div class="flex space-x-6 md:mr-8">
+                            <a href="index.html" class="hover:text-[#9ca1a4] transition">Home</a>
+                            <a href="about.html" class="hover:text-[#9ca1a4] transition">About</a>
+                            <a href="services.html" class="hover:text-[#9ca1a4] transition">Services</a>
+                            <a href="contact.html" class="hover:text-[#9ca1a4] transition">Contact</a>
+                        </div>
+                        <div class="flex space-x-4">
+                            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="hover:text-[#9ca1a4] transition">
+                                <i data-lucide="facebook"></i>
+                            </a>
+                            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="hover:text-[#9ca1a4] transition">
+                                <i data-lucide="instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-8 pt-8 border-t border-gray-800 text-center text-gray-400 text-sm">
+                    <p>&copy; 2025 Isolathe Media Group. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // Mobile menu toggle
+        const menuButton = document.getElementById('menuButton');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        menuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

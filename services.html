@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Isolathe Media Group</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/lucide-icons/dist/umd/lucide-icons.js" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="min-h-screen flex flex-col bg-[#091217] text-[#9ca1a4]">
+        <!-- Header (same as index.html) -->
+        <header class="bg-white shadow-sm sticky top-0 z-50">
+            <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+        <a href="index.html" class="flex items-center space-x-3">
+		  <img src="images/logo.png" alt="Isolathe Media Group Logo" class="h-10 w-auto" />
+		  <div>
+			<span class="text-xl font-bold tracking-wider text-[#091217]">ISOLATHE MEDIA GROUP</span>
+			<span class="block text-xs tracking-wider text-gray-500">ART MEETS ADHESIVE</span>
+		  </div>
+		</a>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-600 hover:text-[#091217] transition-colors">Home</a>
+                    <a href="about.html" class="text-gray-600 hover:text-[#091217] transition-colors">About Us</a>
+                    <a href="services.html" class="text-[#9ca1a4]">Services</a>
+                    <a href="contact.html" class="text-gray-600 hover:text-[#091217] transition-colors">Contact</a>
+                </div>
+                <a href="contact.html" class="hidden md:block bg-[#9ca1a4] text-white px-4 py-2 rounded-md hover:bg-[#828688] transition">
+                    Get Quote
+                </a>
+
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden" id="menuButton">
+                    <i data-lucide="menu"></i>
+                </button>
+            </nav>
+
+            <!-- Mobile Navigation Menu -->
+            <div class="md:hidden hidden" id="mobileMenu">
+                <div class="px-4 py-2 space-y-2 bg-white border-t border-gray-100">
+                    <a href="index.html" class="block py-2">Home</a>
+                    <a href="about.html" class="block py-2">About Us</a>
+                    <a href="services.html" class="block py-2">Services</a>
+                    <a href="contact.html" class="block py-2">Contact</a>
+                    <a href="contact.html" class="block bg-[#9ca1a4] text-white px-4 py-2 rounded-md hover:bg-[#828688] transition text-center mt-4">
+                        Get Quote
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main>
+            <!-- Hero Section -->
+            <section class="relative h-[400px]">
+                <div class="absolute inset-0">
+                    <img src="images/img1.png" alt="Large format printing" class="w-full h-full object-cover" />
+                    <div class="absolute inset-0 bg-[#091217] bg-opacity-80"></div>
+                </div>
+                <div class="relative max-w-7xl mx-auto px-4 h-full flex items-center">
+                    <div class="max-w-3xl">
+                        <h1 class="text-4xl md:text-5xl font-bold text-white mb-6">Our Services</h1>
+                        <p class="text-xl text-[#9ca1a4]">
+                            Comprehensive printing and branding solutions for your business.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Services Grid -->
+            <section class="py-20">
+                <div class="max-w-7xl mx-auto px-4">
+                    <div class="grid md:grid-cols-2 gap-12">
+                        <!-- Billboard Printing -->
+                        <div class="bg-[#0e1620] p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+                            <img src="images/billboard.png" alt="Billboard Printing" class="w-full h-48 object-cover rounded-md mb-4" />
+                            <h3 class="text-2xl font-bold mb-4 text-white">Billboard Printing</h3>
+                            <p class="text-[#9ca1a4] mb-6">
+                                High-impact outdoor advertising solutions with weather-resistant materials and vibrant colors. Our billboard printing service ensures maximum visibility and durability for your outdoor campaigns.
+                            </p>
+                            <ul class="text-[#9ca1a4] mb-6 space-y-2">
+                                <li>• Weather-resistant materials</li>
+                                <li>• Vibrant, long-lasting colors</li>
+                                <li>• Custom sizes available</li>
+                                <li>• Professional installation</li>
+                            </ul>
+                            <a href="contact.html" class="inline-flex items-center text-[#9ca1a4] hover:text-white transition-colors">
+                                Get a quote <i data-lucide="chevron-right" class="ml-2 h-5 w-5"></i>
+                            </a>
+                        </div>
+
+                        <!-- Retail Branding -->
+                        <div class="bg-[#0e1620] p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+                            <img src="images/retail.png" alt="Billboard Printing" class="w-full h-48 object-cover rounded-md mb-4" />
+                            <h3 class="text-2xl font-bold mb-4 text-white">Retail Branding</h3>
+                            <p class="text-[#9ca1a4] mb-6">
+                                Complete retail branding solutions to help your business stand out. From window displays to in-store signage, we create cohesive brand experiences that attract and engage customers.
+                            </p>
+                            <ul class="text-[#9ca1a4] mb-6 space-y-2">
+                                <li>• Window displays</li>
+                                <li>• In-store signage</li>
+                                <li>• Point-of-sale materials</li>
+                                <li>• Brand consistency</li>
+                            </ul>
+                            <a href="contact.html" class="inline-flex items-center text-[#9ca1a4] hover:text-white transition-colors">
+                                Get a quote <i data-lucide="chevron-right" class="ml-2 h-5 w-5"></i>
+                            </a>
+                        </div>
+
+                        <!-- Event Branding -->
+                        <div class="bg-[#0e1620] p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+                            <img src="images/event.png" alt="Billboard Printing" class="w-full h-48 object-cover rounded-md mb-4" />
+                            <h3 class="text-2xl font-bold mb-4 text-white">Event Branding</h3>
+                            <p class="text-[#9ca1a4] mb-6">
+                                Make your event memorable with custom branding solutions. From trade shows to conferences, we provide all the materials you need to create a professional and cohesive presence.
+                            </p>
+                            <ul class="text-[#9ca1a4] mb-6 space-y-2">
+                                <li>• Banners and backdrops</li>
+                                <li>• Exhibition materials</li>
+                                <li>• Promotional displays</li>
+                                <li>• Wayfinding signage</li>
+                            </ul>
+                            <a href="contact.html" class="inline-flex items-center text-[#9ca1a4] hover:text-white transition-colors">
+                                Get a quote <i data-lucide="chevron-right" class="ml-2 h-5 w-5"></i>
+                            </a>
+                        </div>
+
+                        <!-- Billboard Art Installation -->
+                        <div class="bg-[#0e1620] p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+                            <img src="images/installation.png" alt="Billboard Printing" class="w-full h-48 object-cover rounded-md mb-4" />
+                            <h3 class="text-2xl font-bold mb-4 text-white">Billboard Art Installation</h3>
+                            <p class="text-[#9ca1a4] mb-6">
+                                Expert art installation and maintenance of billboard campaigns. Our billboard art installation service ensures your ads are displayed with artistic precision and maximum impact.
+                            </p>
+                            <ul class="text-[#9ca1a4] mb-6 space-y-2">
+                                <li>• Artistic installation approach</li>
+                                <li>• Expert professionals</li>
+                                <li>• Creative placement solutions</li>
+                                <li>• Regular maintenance</li>
+                            </ul>
+                            <a href="contact.html" class="inline-flex items-center text-[#9ca1a4] hover:text-white transition-colors">
+                                Get a quote <i data-lucide="chevron-right" class="ml-2 h-5 w-5"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Materials Section -->
+            <section class="py-16 bg-[#0e1620]">
+                <div class="max-w-7xl mx-auto px-4 text-center">
+                    <h2 class="text-3xl md:text-4xl font-bold text-white mb-8">Materials We Offer</h2>
+                    <p class="mb-10 text-[#9ca1a4] text-lg max-w-3xl mx-auto">
+                        High-performance materials for every branding application — outdoor, indoor, mobile, and more.
+                    </p>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-[#9ca1a4] text-lg">
+                        <div class="bg-[#101a24] p-4 rounded-md hover:bg-[#131e2a] transition-colors">Economy Vinyl</div>
+                        <div class="bg-[#101a24] p-4 rounded-md hover:bg-[#131e2a] transition-colors">Billboard PVC</div>
+                        <div class="bg-[#101a24] p-4 rounded-md hover:bg-[#131e2a] transition-colors">Roller Banner Non Curl PVC</div>
+                        <div class="bg-[#101a24] p-4 rounded-md hover:bg-[#131e2a] transition-colors">Window Film</div>
+                        <div class="bg-[#101a24] p-4 rounded-md hover:bg-[#131e2a] transition-colors">Dye Sublimation Paper</div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer (same as index.html) -->
+        <footer class="bg-[#091217] text-white py-12">
+            <div class="max-w-7xl mx-auto px-4">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <div class="flex items-center mb-6 md:mb-0">
+                        
+                        <div class="ml-3 flex items-center space-x-2">
+							<img src="images/logo2.png" alt="Isolathe Logo" class="w-10 h-10 object-contain" />
+							<div>
+								<span class="text-xl font-bold tracking-wider">ISOLATHE MEDIA GROUP</span>
+								<span class="block text-xs tracking-wider text-gray-400">ART MEETS ADHESIVE</span>
+							</div>
+						</div>
+
+                    </div>
+                    <div class="flex flex-col md:flex-row items-center space-y-4 md:space-y-0">
+                        <div class="flex space-x-6 md:mr-8">
+                            <a href="index.html" class="hover:text-[#9ca1a4] transition">Home</a>
+                            <a href="about.html" class="hover:text-[#9ca1a4] transition">About</a>
+                            <a href="services.html" class="hover:text-[#9ca1a4] transition">Services</a>
+                            <a href="contact.html" class="hover:text-[#9ca1a4] transition">Contact</a>
+                        </div>
+                        <div class="flex space-x-4">
+                            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="hover:text-[#9ca1a4] transition">
+                                <i data-lucide="facebook"></i>
+                            </a>
+                            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="hover:text-[#9ca1a4] transition">
+                                <i data-lucide="instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-8 pt-8 border-t border-gray-800 text-center text-gray-400 text-sm">
+                    <p>&copy; 2025 Isolathe Media Group. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // Mobile menu toggle
+        const menuButton = document.getElementById('menuButton');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        menuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
